@@ -1,0 +1,61 @@
+doctype html
+html
+    head
+        title Krishil's Dance Academy
+        style
+            include ../static/style.css
+    body
+        nav#navbar
+            ul
+                div#logo
+                    img(src="/static/img/logo.png")
+                    | KDA
+                
+                li #[a(href = "/") Contact]    
+
+        section#introSection 
+            div.heading Krishil's Dance Academy
+            div.small Follow the Passion  
+
+        section#missionSection
+            h2  Our Mission
+            div#carditem
+
+                div.card
+                    h3 Dance Perfection
+                    div.card-box
+                        div.card-img
+                            img(src="/static/img/1.png")
+                        div.card-content
+                            p This is the best dance academy of the universe
+
+                div.card
+                    h3 Dance the way you like
+                    div.card-box
+                        div.card-img
+                            img(src="/static/img/2.png") 
+                        div.card-content
+                            p This is the best dance academy of the universe
+
+                div.card
+                    h3 Expert Teaching
+                    div.card-box
+                        div.card-img
+                            img(src="/static/img/3.png")
+                        div.card-content
+                            p This is the best dance academy of the universe
+
+
+        section#sponsorsSection
+            h2  Our Sponsors
+            div#sponsorsF
+                img(src="/static/img/logo1.png", alt="Sponsor Image", class="spImage" )
+                img(src="/static/img/logo2.png", alt="Sponsor Image", class="spImage" )
+                img(src="/static/img/logo3.png", alt="Sponsor Image", class="spImage" )
+                img(src="/static/img/logo4.png", alt="Sponsor Image", class="spImage" )
+
+        footer#footer
+            | Copyright © 2022 KrishilAcademy.com | All Rights Reserved
+
+        script
+            include ../static/index.js

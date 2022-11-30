@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#logo{
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 0px 14px;
+    font-size: 26px;
+    margin-right: 40px;
+}
+#logo img{
+    height: 42px;
+    filter: invert(1);
+}
+#navbar{
+    background-color: black;
+    font-family: 'Oswald', sans-serif;
+    padding: 10px 10px;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#navbar li{
+    list-style: none;
+}
+#navbar li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 25px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+#navbar li a:hover{
+    color: indianred;
+}
+#introSection{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lobster', cursive;
+    height: 350px;
+    
+}
+
+#introSection::before{
+    content: " ";
+    position: absolute;
+    height: 350px;
+    width: 100%;
+    background: center url("/static/intro.jpg");
+    opacity: 0.7; 
+    z-index: -1;
+    background-size: cover;
+    } 
+#introSection div.heading{
+    font-size: 40px;
+    color: black;
+}
+#introSection div.small{
+    font-size: 30px;    
+    padding: 5px;
+}
+
+#missionSection{
+    height: 300px;
+    
+    margin: auto;
+}
+#missionSection h2{
+    text-align: center;
+    padding: 12px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+}
+#carditem{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card{
+    display: inline-block;
+    border: 2px solid;
+    border-radius: 10px;
+    width: 25%;
+    margin: 12px;
+    height:  200px;
+}
+.card h3{
+    text-align: center;
+    margin: 0 12px;
+    margin-top: 12px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-img{
+    height: 130px;
+    padding: 0 14px;
+    margin: 5px 9px;
+}
+.card-img img{
+    height: inherit;
+}
+.card-content {
+    padding: 0 10px;
+}
+
+.card-content p{
+    font-size: 19px;
+}
+
+#sponsorsSection{
+    background-color: antiquewhite;
+    height: 300px;
+    
+}
+
+#sponsorsSection h2{
+    text-align: center;
+    padding: 12px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+}
+#sponsors{
+    height: 190px;
+    max-width: 1000px;
+    margin: 14px    auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.spImage{
+    height: 80%;
+    margin: 20px;
+}
+#footer{
+    height: 60px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
